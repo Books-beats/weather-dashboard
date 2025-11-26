@@ -87,20 +87,10 @@ A full-stack weather dashboard application that provides real-time weather infor
     npm run dev
     ```
     The application should now be accessible at `http://localhost:3001`.
+    
+## DEMO 
+<img width="1845" height="967" alt="image" src="https://github.com/user-attachments/assets/175d3de4-fe5c-4efe-852b-e45dc5de8496" />
 
-## Project Structure
-
-```
-weather-dashboard/
-├── backend/            # Express.js backend
-│   ├── routes/         # API routes
-│   ├── app.js          # Express app setup
-│   └── ...
-├── frontend/           # Next.js frontend
-│   ├── app/            # Next.js app directory (page)
-│   └── ...
-└── README.md
-```
 
 ## API Endpoints
 
