@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///home/riya/Desktop/projects/weather-dashboard/frontend/app/page.tsx"],"sourcesContent":["const Page = () => {\n  return (\n    <>\n      <div>\n        <h1>Weather</h1>\n        <p>Search for a city to view current weather conditions</p>\n        <button onClick={() => console.log(\"hello toggle mode\")}></button>\n      </div>\n    </>\n  );\n};\n\nexport default Page;\n"],"names":[],"mappings":";;;;;;AAAA,MAAM,OAAO;IACX,qBACE;kBACE,cAAA,8RAAC;;8BACC,8RAAC;8BAAG;;;;;;8BACJ,8RAAC;8BAAE;;;;;;8BACH,8RAAC;oBAAO,SAAS,IAAM,QAAQ,GAAG,CAAC;;;;;;;;;;;;;AAI3C;uCAEe"}}]
+}
