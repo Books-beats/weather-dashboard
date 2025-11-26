@@ -90,6 +90,7 @@ A full-stack weather dashboard application that provides real-time weather infor
     
 ## DEMO 
 <img width="1845" height="967" alt="image" src="https://github.com/user-attachments/assets/175d3de4-fe5c-4efe-852b-e45dc5de8496" />
+<img width="1796" height="913" alt="image" src="https://github.com/user-attachments/assets/513cbdc3-4e49-49b7-ba7f-ba5c9d0967af" />
 
 
 ## API Endpoints
