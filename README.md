@@ -54,7 +54,6 @@ A full-stack weather dashboard application that provides real-time weather infor
     Create a `.env` file in the `backend` directory and add your API credentials:
 
     ```env
-    PORT=3000
     BASEURL=http://api.weatherapi.com/v1
     APIKEY=your_api_key_here
     ```
