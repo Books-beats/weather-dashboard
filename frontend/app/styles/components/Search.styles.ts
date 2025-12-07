@@ -36,7 +36,7 @@ export const SearchWrapper = styled.div<{ $darkmode: boolean }>`
 `;
 
 export const AutoSuggestion = styled.div<{ $darkmode: boolean }>`
-  position: absolute;
+  position: relative;
   z-index: 10;
   width: 100%;
   margin-top: 0.5rem;

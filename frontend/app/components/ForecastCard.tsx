@@ -14,18 +14,18 @@ import {
 
 const ForecastCard = ({ darkMode, forecast }) => {
   return (
-    <Card darkMode={darkMode}>
-      <Title darkMode={darkMode}>5-Day Forecast</Title>
+    <Card $darkmode={darkMode}>
+      <Title $darkmode={darkMode}>5-Day Forecast</Title>
       <ForecastGrid>
         {forecast.forecastday.map((day: any, idx: number) => (
           <ForecastItem key={idx}>
-            <DayName darkMode={darkMode}>{getDayName(day.date)}</DayName>
-            <WeatherIconWrapper darkMode={darkMode}>
+            <DayName $darkmode={darkMode}>{getDayName(day.date)}</DayName>
+            <WeatherIconWrapper $darkmode={darkMode}>
               {getWeatherIcon(day.day.condition.text)}
             </WeatherIconWrapper>
             <TempWrapper>
-              <MaxTemp darkMode={darkMode}>{day.day.maxtemp_c}°</MaxTemp>
-              <MinTemp darkMode={darkMode}>{day.day.mintemp_c}°</MinTemp>
+              <MaxTemp $darkmode={darkMode}>{day.day.maxtemp_c}°</MaxTemp>
+              <MinTemp $darkmode={darkMode}>{day.day.mintemp_c}°</MinTemp>
             </TempWrapper>
           </ForecastItem>
         ))}
