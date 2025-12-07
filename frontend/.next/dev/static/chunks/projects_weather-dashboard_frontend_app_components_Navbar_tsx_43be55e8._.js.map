@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/riya/Desktop/projects/weather-dashboard/frontend/app/components/Navbar.tsx"],"sourcesContent":["\"use client\";\nimport { Search } from \"lucide-react\";\nimport styled from \"styled-components\";\n\nconst Nav = styled.div`\n  height: 56px;\n  background-color: white;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  position: fixed;\n  top: 0;\n  width: 100%;\n  padding-inline: 1rem;\n  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.3);\n  > h2 {\n    margin-block: 0.75rem;\n  }\n`;\n\nconst Navbar = () => {\n  return (\n    <>\n      <Nav>\n        <h2>Mausam Mausam</h2>\n        <Search />\n      </Nav>\n    </>\n  );\n};\n\nexport default Navbar;\n"],"names":[],"mappings":";;;;;AACA;AACA;AAFA;;;;AAIA,MAAM,MAAM,oPAAM,CAAC,GAAG,CAAC;;;;;;;;;;;;;;AAcvB,CAAC;KAdK;AAgBN,MAAM,SAAS;IACb,qBACE;kBACE,cAAA,6OAAC;;8BACC,6OAAC;8BAAG;;;;;;8BACJ,6OAAC,mQAAM;;;;;;;;;;;;AAIf;MATM;uCAWS"}}]
-}
