@@ -6,7 +6,7 @@ require("dotenv").config();
 const baseUrl = process.env.BASEURL;
 
 /* GET current weather. */
-router.get("/api/weather/current", async function (req, res, next) {
+router.get("/weather/current", async function (req, res, next) {
   const { q } = req.query;
   if (!q)
     return res.status(400).json({ error: "Query parameter is required." });
@@ -26,7 +26,7 @@ router.get("/api/weather/current", async function (req, res, next) {
 });
 
 /* GET weather forecast */
-router.get("/api/weather/forecast", async function (req, res) {
+router.get("/weather/forecast", async function (req, res) {
   const { q, days } = req.query;
   if (!q)
     return res.status(400).json({ error: "Query parameter is required." });
@@ -47,7 +47,7 @@ router.get("/api/weather/forecast", async function (req, res) {
 });
 
 /* GET current location autocomplete */
-router.get("/api/locations/autocomplete", async function (req, res) {
+router.get("/locations/autocomplete", async function (req, res) {
   const { q } = req.query;
   if (!q)
     return res.status(400).json({ error: "Query parameter 'q' is required." });
