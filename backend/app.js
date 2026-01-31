@@ -9,7 +9,12 @@ var indexRouter = require("./routes/index");
 
 var app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL || "*",
+    optionsSuccessStatus: 200,
+  }),
+);
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
