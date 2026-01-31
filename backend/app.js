@@ -1,3 +1,4 @@
+require("dotenv").config();
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
@@ -7,12 +8,13 @@ var cors = require("cors");
 
 var indexRouter = require("./routes/index");
 
+const PORT = process.env.PORT || 3000;
 var app = express();
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "*",
-    optionsSuccessStatus: 200,
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
   }),
 );
 app.use(logger("dev"));
@@ -34,5 +36,12 @@ app.use(function (err, req, res, next) {
     error: err.message || "Internal Server Error",
   });
 });
+
+if (require.main === module) {
+  // app starts listening on PORT
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
 
 module.exports = app;
